@@ -62,6 +62,23 @@ class Oparetion
 		System.out.println("Area Of Triangle: "+ areaOfTriangle);
 
 		//-------------------------------------------------------------------------
+		// 
+		// Increment and Decrement Operators
+		//
+		int X = 10;
+		int Y;
+
+		Y= X++; // Assign X value to Y first, then X will increment
+		System.out.println("Y is : "+Y);
+		System.out.println("X is : "+X);
+
+		X=10;
+		Y= ++X; // Assign X value to Y first, then X will increment
+		System.out.println("Y is : "+Y);
+		System.out.println("X is : "+X);
+
+
+
 
 		
 
