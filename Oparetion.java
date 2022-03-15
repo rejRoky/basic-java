@@ -72,6 +72,7 @@ class Oparetion
 		System.out.println("Y is : "+Y);
 		System.out.println("X is : "+X);
 
+		
 		X=10;
 		Y= ++X; // Assign X value to Y first, then X will increment
 		System.out.println("Y is : "+Y);
