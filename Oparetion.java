@@ -78,13 +78,12 @@ class Oparetion
 		System.out.println("Y is : "+Y);
 		System.out.println("X is : "+X);
 
-
-
-
+		Y = 3*X++ + 4*++X;
+		System.out.println("Y is : "+Y);
 		
-
-
-
+		byte z = 5;
+		//z = z+1; 
+		z++;
 
 
 	}
