@@ -85,7 +85,62 @@ public class StringRegularExpression {
         str1="ricks@gmail.com";
         System.out.println(str1.matches(".*gmail.*"));
         System.out.println(str1.matches("\\w*@gmail(.*)"));
+
+
+        /// Number is Binary or Not
+
+        int b = 1010010; 
+        String s = String.valueOf(b);
+        System.out.println(s.matches("[01]+"));
         
+        b = 1010610; 
+        s = String.valueOf(b);
+        System.out.println(s.matches("[01]*"));
+
+
+
+        /// Number is Hex or Not
+
+        String h = "AB01"; 
+        s = String.valueOf(h);
+        System.out.println(s.matches("[0-9A-F]+"));
+
+        h = "AGB01"; 
+        s = String.valueOf(h);
+        System.out.println(s.matches("[0-9A-F]+"));
+
+
+        /// Date Format check DD/MM/YYYY
+
+        h = "16/10/1995"; 
+        System.out.println(h.matches("[0-3][0-9]/([0]([0-9])|[1][0-2])/[0-9]{4}"));
+        h = "16/13/1995"; 
+        System.out.println(h.matches("[0-3][0-9]/([0]([0-9])|[1][0-2])/[0-9]{4}"));
+
+
+        /// Remove Special Character
+
+        s = "a1$b@c2$3";
+        System.out.println(s.replaceAll("[^a-zA-Z0-9]", ""));
+
+        
+        /// Remove Extra space 
+
+        s = "My name is Roky";
+        System.out.println(s.replaceAll("\\s", ""));
+        s = "     My name is Roky      ";
+        System.out.println(s.replaceAll("\\s", "").trim());
+
+
+        /// Find words in String 
+
+        s = "     My name is Roky      ";
+        s = s.trim();
+        String w [] = s.split("\\s");
+        System.out.println(w.length);
+
+
+
 
     }
 }
