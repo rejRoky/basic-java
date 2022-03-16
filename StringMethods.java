@@ -62,6 +62,17 @@ public class StringMethods {
 
 
 
+        str = "iamjava@java.com";
+
+        str1 = str.substring(0, str.indexOf("@"));
+        System.out.println("User Name: "+str1);
+
+        str2 = str.substring((1+ str.indexOf("@")), str.length());
+        System.out.println("Domain Name: "+str2);
+
+        System.out.println(str2.startsWith("java.com"));
+
+
     }
     
 }
