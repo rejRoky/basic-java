@@ -71,7 +71,8 @@ public class SwitchCase {
         /// Display type of website
         
         System.out.println("Enter Website name :");
-        String str = sc.next();
+        sc.nextLine();
+        String str = sc.nextLine();
         str = str.toLowerCase();
 
         switch (str.substring(str.lastIndexOf(".")+1))
@@ -91,6 +92,48 @@ public class SwitchCase {
         }
 
 
+        /// Make a Menu Driven Program for Arithmetic Operations - Sample Basic Calculator
+
+        System.out.println("Enter Two Number : ");
+        int num1 = sc.nextInt(); 
+        int num2 = sc.nextInt();
+
+        System.out.println("\n\nMenu");
+        System.out.println("----");
+        System.out.println("Add");
+        System.out.println("Sub");
+        System.out.println("Mul");
+        System.out.println("Div");
+
+        System.out.println("Enter You option : ");
+        sc.nextLine();
+        str = sc.nextLine();
+        str = str.toLowerCase();
+
+        switch (str)
+        {
+            case "add" :
+                System.out.printf("Add: %d + %d = %d\n",num1,num2,(num1+num2) );
+                break;
+
+            case "sub" :
+                System.out.printf("Sub: %d - %d = %d\n",num1,num2,(num1-num2) );
+                break;
+
+            case "mul" :
+                System.out.printf("Mul: %d X %d = %d\n",num1,num2,(num1*num2) );
+                break;
+
+            case "div" :
+                
+                System.out.printf("Div: %d / %d = %d\n",num1,num2,(num1/num2) );
+                break;
+
+            default :
+                System.out.println("Invaild Option");
+                break;
+
+        }
 
 
 
