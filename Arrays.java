@@ -48,6 +48,94 @@ public class Arrays {
         }
         System.out.println(element2);
 
+        //// Rotating an array  Left rotating
+        int B[] = {3,5,6,4,8,9,5};
+        for(int x : B)
+        {
+            System.out.printf(x + ", ");
+        }
+
+        int temp = B[0];
+
+        for (int i = 1 ; i < B.length; i++)
+        {
+            B[i-1] = B[i];
+
+        }
+        B[B.length-1] = temp;
+
+        System.out.printf("\n");
+
+        for(int x : B)
+        {
+            System.out.printf(x+", ");
+        }
+
+        System.out.printf("\n");
+
+
+        //// Rotating an array  Right rotating
+        int C[] = {3,5,6,4,8,9,5};
+        for(int x : C)
+        {
+            System.out.printf(x + ", ");
+        }
+
+        temp = C[C.length-1];
+
+        for (int i = C.length-1; i > 0;  i--)
+        {
+            C[C.length-1] = C[i-1];
+
+        }
+        C[0] = temp;
+
+        System.out.printf("\n");
+
+        for(int x : C)
+        {
+            System.out.printf(x+", ");
+        }
+        
+        System.out.printf("\n");
+
+
+        // Inserting an Element 
+        int D[] = {3,5,6,4,8,9,5};
+        
+
+        for(int x : D)
+        {
+            System.out.printf(x + ", ");
+        }
+        System.out.printf("\nEnter a Number :");
+        int ins = sc.nextInt();
+        System.out.printf("\nEnter position :");
+        int pos = sc.nextInt();
+
+        for(int i = D.length-1 ; i >pos ; i--)
+        {
+            D[i] = D[i-1];
+            D[pos] = ins;
+            
+        }
+        System.out.printf("\n");
+
+        for(int x : D)
+        {
+            System.out.printf(x+", ");
+        }
+        
+        System.out.printf("\n");
+
+
+        
+
+
+
+
+
+
 
     }
     
