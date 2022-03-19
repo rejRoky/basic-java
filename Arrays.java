@@ -101,32 +101,42 @@ public class Arrays {
 
 
         // Inserting an Element 
-        int D[] = {3,5,6,4,8,9,5};
-        
-
-        for(int x : D)
+        int Arr[] = new int [10];
+        int n = 5;
+        System.out.println("Enter 5 number for array");
+        for (int i = 0; i<n; i++)
         {
-            System.out.printf(x + ", ");
+            Arr[i] = sc.nextInt();
         }
-        System.out.printf("\nEnter a Number :");
-        int ins = sc.nextInt();
-        System.out.printf("\nEnter position :");
+        System.out.println("Your Arrays:");
+        for (int i = 0; i < n; i++)
+        {
+            System.out.printf(Arr[i]+", ");
+        }
+        System.out.printf("\n");
+
+        System.out.printf("Enter a Number For inserting: ");
+        int newNumber = sc.nextInt();
+        System.out.printf("\nEnter the position  of inserting: ");
         int pos = sc.nextInt();
 
-        for(int i = D.length-1 ; i >pos ; i--)
+        for (int i = n  ; i > pos; i--)
         {
-            D[i] = D[i-1];
-            D[pos] = ins;
-            
+            Arr [i] = Arr[i-1];
+            Arr[pos] = newNumber;
         }
-        System.out.printf("\n");
 
-        for(int x : D)
+        for (int i = 0; i < n+1; i++)
         {
-            System.out.printf(x+", ");
+            System.out.printf(Arr[i]+", ");
         }
-        
         System.out.printf("\n");
+        
+
+
+
+
+
 
 
         
